@@ -61,6 +61,25 @@ a:hover{text-decoration:underline;text-underline-offset:5px}:focus-visible{outli
 }
 @media(min-width:1700px){.hero:before{left:calc(50% - 1236px);top:-444px;width:2341px;height:1636px;background-image:url('figma-v2/hero-wave-wide.svg')}.about{background:linear-gradient(var(--paper) 1066px,var(--sea) 1066px)}.about:before{top:0;left:calc(50% - 1236px);width:2341px;height:168px;background-image:url('figma-v2/hero-wave-wide.svg');background-size:2341px 1636px}.about:after{left:calc(50% - 1236px);top:909px;width:2341px;height:1636px;background-image:url('figma-v2/about-wave-wide.svg');transform:rotate(180deg)}}
 @media(min-width:901px) and (max-width:1200px){.navigation{gap:30px;font-size:15px}.hero h1{left:32%;width:64%;font-size:62px}.hero h1>.star{left:55%}.collage h2{font-size:clamp(46px,5.1vw,58px);line-height:1.1;width:58%}.story-copy{font-size:16px;top:530px}.footer-links{gap:35px}.footer-links a{font-size:13px}.footer-links a+a:before{left:-18px}.chapter h3,.chapter p{font-size:15px}}
+/* Desktop backgrounds fill the window; content and type keep their readable widths. */
+@media(min-width:901px){
+  body{max-width:none}
+  .release{background-size:cover;background-position:center}
+  .news-card img{object-fit:cover}
+  .news-link:hover{transform:none}
+  .news-arrow,.release-note{display:none}
+}
+/* Extend the wide Figma composition without stretching the lighthouse illustration. */
+@media(min-width:1921px){
+  .hero{height:auto;min-height:1024px;aspect-ratio:1920/1024}
+  .hero-visual{height:98.6328125%;mask-size:100% 100%}
+  .hero-art{width:111.9134%;height:auto;left:-11.9134%;top:-8.67265%}
+  .hero h1{left:calc(50% - 293px);top:33.984375%}
+  .play-button{right:calc((100% - 1920px)/2 + 204px);top:73.046875%}
+  .hero:before,.about:before,.about:after{left:-14.375%;width:121.9270833%;background-size:100% 1636px}
+  .hero:before{top:auto;bottom:-168px}
+  .news-section:after,.release:after{left:-17.93185%;width:129.489886%;height:613.23648px;background-size:100% 100%}
+}
 @media(max-width:900px){
   .container{width:calc(100% - 40px)}.header{top:52px}.header-inner{height:54px;gap:26px;justify-content:flex-start}.brand,.brand img{width:112.8px;height:54px}.languages{margin-left:auto;font-size:15px;gap:12px}.languages img{display:none}
   .navigation{position:static;transform:none;flex-wrap:wrap;justify-content:center;gap:25px;width:100%;font-size:15px}.header-inner:has(.navigation){flex-wrap:wrap}html:not(.js) .navigation{order:3}.js .header-inner{flex-wrap:nowrap}.js .navigation{display:none}
