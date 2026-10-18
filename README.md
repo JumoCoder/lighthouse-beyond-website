@@ -9,7 +9,7 @@ Standalone, dependency-free static website for GitHub Pages. No Godot project, A
 - `/lighthouse-beyond-website/privacy/` — English privacy draft
 - `/lighthouse-beyond-website/privacy/ru/` — Russian privacy draft
 
-Contact: al.mandarinne@gmail.com
+Contact: al.mandarinne@mail.ru
 
 The privacy pages explicitly describe the present test integration and mark missing publisher information. They are not approved legal documents for a production game release. Before using them in store submissions, complete and review the identified information. VK Ads is planned, not active.
 
